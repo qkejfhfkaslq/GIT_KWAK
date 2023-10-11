@@ -57,4 +57,18 @@ void LCRS_PrintTree(LCRSNode *Node, int Depth){
 }
 
 
+void LCRS_PrintTree_EX(LCRSNode *Node, int Depth){
+
+    int i=0;
+    for(i=0; i<Depth-1; i++)
+        printf("   ");
+
+    if(Depth >0)
+        printf("+--");
+
+    printf("%c\n", Node->Data);
+    if(Node->LeftChild != NULL)
+        LCRS_PrintTree(Node->LeftChild, Depth+1);
+
+}
 

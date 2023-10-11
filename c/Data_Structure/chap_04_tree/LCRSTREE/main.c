@@ -28,7 +28,8 @@ int main(void){
             LCRS_AddChildNode(J,K);
     
             
-    LCRS_PrintTree(Root,0);
+    //LCRS_PrintTree(Root,0);
+    LCRS_PrintTree_EX(I,1);
     LCRS_DestroyTree(Root);
 
 
